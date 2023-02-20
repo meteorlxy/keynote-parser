@@ -18,6 +18,12 @@ import { parseIwa } from 'keynote-parser2';
 const iwaData = await parseIwa('/path/to/iwa_file.iwa');
 ```
 
+## Credits
+
+- [obriensp/iWorkFileFormat](https://github.com/obriensp/iWorkFileFormat)
+- [psobot/keynote-parser](https://github.com/psobot/keynote-parser) (Python)
+- [pranaygp/keynote-parser](https://github.com/pranaygp/keynote-parser) (Node.js)
+
 ## License
 
 [MIT](https://github.com/meteorlxy/keynote-parser/blob/main/LICENSE) &copy; [meteorlxy](https://github.com/meteorlxy) & [Contributors](https://github.com/meteorlxy/keynote-parser/graphs/contributors)
