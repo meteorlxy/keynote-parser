@@ -18,6 +18,7 @@
     "pb:ts": "pbts -o proto/proto.d.ts proto/proto.js",
     "prepare": "husky install",
     "prepublishOnly": "pnpm clean && pnpm lint && pnpm build && pnpm test",
+    "publish": "git push origin main --tags",
     "test": "vitest run",
     "test:cov": "vitest run --coverage",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md"
