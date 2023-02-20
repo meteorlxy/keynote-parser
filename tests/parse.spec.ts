@@ -18,13 +18,11 @@ describe('parseIwa', () => {
       absolute: true,
     });
 
-    await Promise.all(
-      iwaFilePaths.map(async (iwaFilePath) => {
-        const iwaJsonFilePath = `${iwaFilePath}.json`;
-        const iwaData = await parseIwa(iwaFilePath);
-        await fs.writeFile(iwaJsonFilePath, JSON.stringify(iwaData, null, 2));
-        expect(iwaData).toMatchSnapshot();
-      }),
-    );
+    for (const iwaFilePath of iwaFilePaths) {
+      const iwaJsonFilePath = `${iwaFilePath}.json`;
+      const iwaData = await parseIwa(iwaFilePath);
+      await fs.writeFile(iwaJsonFilePath, JSON.stringify(iwaData, null, 2));
+      expect(iwaData).toMatchSnapshot();
+    }
   });
 });
