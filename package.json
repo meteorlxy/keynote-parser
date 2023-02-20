@@ -1,0 +1,77 @@
+{
+  "name": "keynote-parser2",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "imports": {
+    "#proto/*": "./proto/*"
+  },
+  "files": [
+    "lib",
+    "proto"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "tsc -b --clean tsconfig.build.json",
+    "dev": "tsc -b --watch tsconfig.build.json",
+    "lint": "eslint --ext .js,.cjs,.ts .",
+    "pb": "pnpm pb:js && pnpm pb:ts",
+    "pb:js": "pbjs -t static-module -w commonjs -o proto/proto.js proto-files/*.proto",
+    "pb:ts": "pbts -o proto/proto.d.ts proto/proto.js",
+    "prepare": "husky install",
+    "prepublishOnly": "pnpm clean && pnpm lint && pnpm build && pnpm test",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,cjs,ts}": "eslint --fix",
+    "*.{json,md,yml}": "prettier --write",
+    "package.json": "sort-package-json"
+  },
+  "prettier": "@meteorlxy/prettier-config",
+  "dependencies": {
+    "decompress": "^4.2.1",
+    "fast-glob": "^3.2.12",
+    "lodash.get": "^4.4.2",
+    "protobufjs": "^7.2.2",
+    "snappy": "^7.2.2",
+    "varint": "^6.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
+    "@meteorlxy/eslint-config-prettier": "^2.21.0",
+    "@meteorlxy/eslint-config-prettier-typescript": "^2.21.0",
+    "@meteorlxy/prettier-config": "^2.11.0",
+    "@meteorlxy/tsconfig": "^2.16.0",
+    "@types/decompress": "^4.2.4",
+    "@types/lodash.get": "^4.4.7",
+    "@types/node": "^18.13.0",
+    "@types/varint": "^6.0.1",
+    "@vitest/coverage-istanbul": "^0.28.5",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^8.34.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "long": "^5.2.1",
+    "prettier": "^2.8.4",
+    "protobufjs-cli": "^1.1.1",
+    "sort-package-json": "^2.4.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.3",
+    "vitest": "^0.28.5"
+  },
+  "packageManager": "pnpm@7.27.0",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "eslint-*"
+      ]
+    }
+  }
+}

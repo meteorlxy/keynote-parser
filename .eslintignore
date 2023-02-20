@@ -1,0 +1,6 @@
+!.*.js
+!.*.cjs
+!.*.mjs
+dev
+lib
+proto
