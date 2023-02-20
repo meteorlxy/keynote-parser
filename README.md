@@ -1,5 +1,9 @@
 # keynote-parser2
 
+[![github check](https://github.com/meteorlxy/keynote-parser/workflows/check/badge.svg)](https://github.com/meteorlxy/keynote-parser/actions?query=workflow%3Acheck)
+[![npm](https://badgen.net/npm/v/keynote-parser2)](https://www.npmjs.com/package/keynote-parser2)
+[![license](https://badgen.net/github/license/meteorlxy/keynote-parser)](https://github.com/meteorlxy/keynote-parser/blob/main/LICENSE)
+
 ## Install
 
 ```sh
