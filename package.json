@@ -1,10 +1,25 @@
 {
   "name": "keynote-parser2",
   "version": "0.0.1",
+  "description": "A library for parsing Apple Keynote file",
+  "keywords": [
+    "keynote",
+    "keynote-parser",
+    "iwa",
+    "iwa-parser"
+  ],
   "type": "commonjs",
   "imports": {
     "#proto/*": "./proto/*"
   },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./lib/*": "./lib/*",
+    "./proto/*": "./proto/*"
+  },
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
     "lib",
     "proto"
