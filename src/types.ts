@@ -10,7 +10,6 @@ export interface IwaArchiveInfoData {
 }
 
 export interface IwaMessageInfoData<T = unknown> {
-  messageInfo: proto.TSP.IMessageInfo;
   messageProtoName: string;
   message: T;
 }

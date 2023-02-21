@@ -46,7 +46,6 @@ export const parseIwaProtobufArchiveInfo = (
     const { messageProtoName, messageProto } = getMessageProto(messageInfo);
     const message = messageProto.decode(messageBuffer);
     messages.push({
-      messageInfo,
       messageProtoName,
       message,
     });
