@@ -4,6 +4,8 @@
 [![npm](https://badgen.net/npm/v/keynote-parser2)](https://www.npmjs.com/package/keynote-parser2)
 [![license](https://badgen.net/github/license/meteorlxy/keynote-parser)](https://github.com/meteorlxy/keynote-parser/blob/main/LICENSE)
 
+A library for parsing Apple Keynote file.
+
 ## Install
 
 ```sh
