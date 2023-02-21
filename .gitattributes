@@ -15,3 +15,6 @@
 *.webp binary
 *.woff binary
 *.woff2 binary
+
+proto-files/** linguist-vendored
+proto/** linguist-generated
