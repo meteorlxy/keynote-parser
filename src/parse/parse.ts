@@ -6,6 +6,8 @@ import { parseIwa } from './parse-iwa';
 
 /**
  * Parse and output a keynote file
+ *
+ * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#bundle
  */
 export const parse = async (
   inputPath: string,

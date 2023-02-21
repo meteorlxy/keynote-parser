@@ -3,6 +3,8 @@ import { parseIwaProtobufArchiveInfo } from './parse-iwa-protobuf-archive-info';
 
 /**
  * Parse IWA protobuf data
+ *
+ * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#protobuf
  */
 export const parseIwaProtobuf = (data: Buffer): IwaData => {
   const iwaData: IwaData = {};

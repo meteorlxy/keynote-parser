@@ -5,6 +5,8 @@ import { getMessageProto } from '../utils';
 
 /**
  * Parse IWA protobuf archive info
+ *
+ * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#protobuf
  */
 export const parseIwaProtobufArchiveInfo = (
   data: Buffer,
