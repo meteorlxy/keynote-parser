@@ -51,7 +51,6 @@
   "prettier": "@meteorlxy/prettier-config",
   "dependencies": {
     "decompress": "^4.2.1",
-    "fast-glob": "^3.2.12",
     "fs-extra": "^11.1.0",
     "lodash.get": "^4.4.2",
     "protobufjs": "^7.2.2",
@@ -73,6 +72,7 @@
     "@vitest/coverage-istanbul": "^0.28.5",
     "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.34.0",
+    "fast-glob": "^3.2.12",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "long": "^5.2.1",
