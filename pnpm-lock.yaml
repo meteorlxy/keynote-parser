@@ -8,6 +8,7 @@ specifiers:
   '@meteorlxy/prettier-config': ^2.11.0
   '@meteorlxy/tsconfig': ^2.16.0
   '@types/decompress': ^4.2.4
+  '@types/fs-extra': ^11.0.1
   '@types/lodash.get': ^4.4.7
   '@types/node': ^18.14.0
   '@types/varint': ^6.0.1
@@ -16,6 +17,7 @@ specifiers:
   decompress: ^4.2.1
   eslint: ^8.34.0
   fast-glob: ^3.2.12
+  fs-extra: ^11.1.0
   husky: ^8.0.3
   lint-staged: ^13.1.2
   lodash.get: ^4.4.2
@@ -34,6 +36,7 @@ specifiers:
 dependencies:
   decompress: 4.2.1
   fast-glob: 3.2.12
+  fs-extra: 11.1.0
   lodash.get: 4.4.2
   protobufjs: 7.2.2
   snappy: 7.2.2
@@ -47,6 +50,7 @@ devDependencies:
   '@meteorlxy/prettier-config': 2.11.0
   '@meteorlxy/tsconfig': 2.16.0
   '@types/decompress': 4.2.4
+  '@types/fs-extra': 11.0.1
   '@types/lodash.get': 4.4.7
   '@types/node': 18.14.0
   '@types/varint': 6.0.1
@@ -1014,12 +1018,25 @@ packages:
       '@types/node': 18.14.0
     dev: true
 
+  /@types/fs-extra/11.0.1:
+    resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
+    dependencies:
+      '@types/jsonfile': 6.1.1
+      '@types/node': 18.14.0
+    dev: true
+
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/jsonfile/6.1.1:
+    resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
+    dependencies:
+      '@types/node': 18.14.0
     dev: true
 
   /@types/linkify-it/3.0.2:
@@ -2688,7 +2705,6 @@ packages:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0
       universalify: 2.0.0
-    dev: true
 
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
@@ -3373,7 +3389,6 @@ packages:
       universalify: 2.0.0
     optionalDependencies:
       graceful-fs: 4.2.10
-    dev: true
 
   /jsonparse/1.3.1:
     resolution: {integrity: sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==}
@@ -4922,7 +4937,6 @@ packages:
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
-    dev: true
 
   /update-browserslist-db/1.0.10_browserslist@4.21.5:
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}

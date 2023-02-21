@@ -1,3 +1,4 @@
+export * from './parse';
 export * from './parse-iwa';
 export * from './parse-iwa-protobuf';
 export * from './parse-iwa-protobuf-archive-info';

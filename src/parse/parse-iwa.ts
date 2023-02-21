@@ -1,14 +1,12 @@
-import fs from 'node:fs/promises';
 import type { IwaData } from '../types';
 import { parseIwaProtobuf } from './parse-iwa-protobuf';
 import { parseIwaSnappy } from './parse-iwa-snappy';
 
 /**
- * Parse IWA file
+ * Parse IWA file data
  */
-export const parseIwa = async (file: string): Promise<IwaData> => {
-  const rawData = await fs.readFile(file);
-  const protobufData = await parseIwaSnappy(rawData);
+export const parseIwa = async (data: Buffer): Promise<IwaData> => {
+  const protobufData = await parseIwaSnappy(data);
   const iwaData = parseIwaProtobuf(protobufData);
   return iwaData;
 };

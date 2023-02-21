@@ -14,10 +14,31 @@ npm i keynote-parser2
 
 ## Usage
 
+### Command Line
+
+TODO
+
+### Node.js API
+
+Parse keynote (.key) file:
+
 ```ts
+import { parse } from 'keynote-parser2';
+
+await parse(
+  '/path/to/keynote_file.key',
+  '/path/to/keynote_file_parsed_directory',
+);
+```
+
+Parse IWA (.iwa) file:
+
+```ts
+import fs from 'node:fs/promises';
 import { parseIwa } from 'keynote-parser2';
 
-const iwaData = await parseIwa('/path/to/iwa_file.iwa');
+const data = await fs.readFile('/path/to/iwa_file.iwa');
+const iwaData = await parseIwa(data);
 ```
 
 ## Credits

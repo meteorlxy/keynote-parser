@@ -1,5 +1,6 @@
 import path from 'node:path';
 import fastGlob from 'fast-glob';
+import fs from 'fs-extra';
 import { describe, expect, it } from 'vitest';
 import { parseIwa } from '../../src';
 
@@ -13,7 +14,8 @@ describe('parseIwa', () => {
     });
 
     for (const iwaFilePath of iwaFilePaths) {
-      const iwaData = await parseIwa(iwaFilePath);
+      const data = await fs.readFile(iwaFilePath);
+      const iwaData = await parseIwa(data);
       expect(iwaData).toMatchSnapshot();
     }
   });
