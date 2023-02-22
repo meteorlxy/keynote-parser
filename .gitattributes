@@ -1,20 +1,8 @@
 * text eol=lf
 *.txt text eol=crlf
 
-*.avif binary
-*.bmp binary
-*.cr2 binary
-*.gif binary
-*.ico binary
-*.jpeg binary
-*.jpg binary
-*.png binary
-*.raw binary
-*.tif binary
-*.tiff binary
-*.webp binary
-*.woff binary
-*.woff2 binary
+*.key binary
+*.iwa binary
 
 proto-files/** linguist-vendored
 proto/** linguist-generated
