@@ -1,3 +1,9 @@
+# [0.3.0](https://github.com/meteorlxy/keynote-parser/compare/v0.2.0...v0.3.0) (2023-02-22)
+
+### Features
+
+- migrate to snappyjs with sync api ([e11072e](https://github.com/meteorlxy/keynote-parser/commit/e11072ebf2e7bb045eb00ca1768c249a5ee2efcb))
+
 # [0.2.0](https://github.com/meteorlxy/keynote-parser/compare/v0.1.0...v0.2.0) (2023-02-21)
 
 ### Features
