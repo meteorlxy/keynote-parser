@@ -1,4 +1,4 @@
-import snappy from 'snappy';
+import snappy from 'snappyjs';
 
 /**
  * Unpack IWA file chunk data from snappy frame
@@ -9,13 +9,13 @@ import snappy from 'snappy';
  *
  * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#snappy-compression
  */
-export const parseIwaSnappyFrame = async (
+export const parseIwaSnappyFrame = (
   data: Buffer,
   cursor: number,
-): Promise<{
+): {
   chunk: Buffer;
   nextCursor: number;
-}> => {
+} => {
   // the first byte of the frame is always 0x00
   if (data[cursor] !== 0x00) {
     throw new Error('Invalid IWA snappy frame');
@@ -28,7 +28,7 @@ export const parseIwaSnappyFrame = async (
   // the snappy compressed chunk data
   const chunkBuffer = data.subarray(chunkBufferStart, chunkBufferEnd);
   // uncompress the chunk data
-  const chunk = (await snappy.uncompress(chunkBuffer)) as Buffer;
+  const chunk = snappy.uncompress(chunkBuffer);
 
   return {
     chunk,

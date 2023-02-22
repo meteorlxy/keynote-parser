@@ -1,4 +1,3 @@
-import path from 'node:path';
 import decompress from 'decompress';
 import fs from 'fs-extra';
 import { isIwaFile } from '../utils';
@@ -18,24 +17,15 @@ export const parse = async (
     throw new Error(`Output path already exists: ${outputPath}`);
   }
 
-  // unzip keynote file and filter iwa files
-  const iwaFiles: decompress.File[] = [];
+  // unzip keynote file and parse iwa files
   await decompress(inputPath, outputPath, {
-    filter: (file) => {
-      if (isIwaFile(file.path)) {
-        iwaFiles.push(file);
-        return false;
-      }
-      return true;
+    map: (file) => {
+      if (!isIwaFile(file.path)) return file;
+      return {
+        ...file,
+        data: Buffer.from(JSON.stringify(parseIwa(file.data), null, 2)),
+        path: `${file.path}.json`,
+      };
     },
   });
-
-  // parse iwa files and output parsed result to json files
-  await Promise.all(
-    iwaFiles.map(async (iwaFile) => {
-      const iwaData = await parseIwa(iwaFile.data);
-      const iwaDataPath = path.resolve(outputPath, `${iwaFile.path}.json`);
-      await fs.outputJSON(iwaDataPath, iwaData, { spaces: 2 });
-    }),
-  );
 };

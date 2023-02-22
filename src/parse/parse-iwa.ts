@@ -7,8 +7,8 @@ import { parseIwaSnappy } from './parse-iwa-snappy';
  *
  * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#iwa
  */
-export const parseIwa = async (data: Buffer): Promise<IwaData> => {
-  const protobufData = await parseIwaSnappy(data);
+export const parseIwa = (data: Buffer): IwaData => {
+  const protobufData = parseIwaSnappy(data);
   const iwaData = parseIwaProtobuf(protobufData);
   return iwaData;
 };

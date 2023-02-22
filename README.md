@@ -38,7 +38,7 @@ import fs from 'node:fs/promises';
 import { parseIwa } from 'keynote-parser2';
 
 const data = await fs.readFile('/path/to/iwa_file.iwa');
-const iwaData = await parseIwa(data);
+const iwaData = parseIwa(data);
 ```
 
 ## Credits

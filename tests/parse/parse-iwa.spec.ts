@@ -15,7 +15,7 @@ describe('parseIwa', () => {
 
     for (const iwaFilePath of iwaFilePaths) {
       const data = await fs.readFile(iwaFilePath);
-      const iwaData = await parseIwa(data);
+      const iwaData = parseIwa(data);
       expect(iwaData).toMatchSnapshot();
     }
   });
