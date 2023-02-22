@@ -17,10 +17,10 @@ export const parseIwaProtobufArchiveInfo = (
 } => {
   // get the first varint, which is the length of the archive info buffer
   const archiveInfoBufferLength = varint.decode(data, cursor);
-  const archiveInfoBufferStart = cursor + (varint.decode.bytes as number);
-  const archiveInfoBufferEnd = archiveInfoBufferStart + archiveInfoBufferLength;
 
   // get the archive info buffer
+  const archiveInfoBufferStart = cursor + (varint.decode.bytes as number);
+  const archiveInfoBufferEnd = archiveInfoBufferStart + archiveInfoBufferLength;
   const archiveInfoBuffer = data.subarray(
     archiveInfoBufferStart,
     archiveInfoBufferEnd,

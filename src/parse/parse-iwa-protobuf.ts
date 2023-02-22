@@ -7,6 +7,7 @@ import { parseIwaProtobufArchiveInfo } from './parse-iwa-protobuf-archive-info';
  * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#protobuf
  */
 export const parseIwaProtobuf = (data: Buffer): IwaData => {
+  // parse the protobuf data one by one and store them in an object
   const iwaData: IwaData = {};
   let cursor = 0;
   while (cursor < data.length) {

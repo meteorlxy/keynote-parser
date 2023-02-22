@@ -6,7 +6,7 @@ import { parseIwaSnappyFrame } from './parse-iwa-snappy-frame';
  * @see https://github.com/obriensp/iWorkFileFormat/blob/master/Docs/index.md#snappy-compression
  */
 export const parseIwaSnappy = (data: Buffer): Buffer => {
-  // unpack the snappy frames one by one
+  // unpack the snappy frames one by one and concat them
   const chunks: Buffer[] = [];
   let cursor = 0;
   while (cursor < data.length - 4) {

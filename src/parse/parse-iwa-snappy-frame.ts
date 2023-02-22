@@ -22,10 +22,9 @@ export const parseIwaSnappyFrame = (
   }
   // the 1-3 bytes of the frame are the data length of the chunk
   const chunkBufferLength = data.readUintLE(cursor + 1, 3);
-  // length of the whole frame
+  // get the snappy compressed chunk data
   const chunkBufferStart = cursor + 4;
   const chunkBufferEnd = chunkBufferStart + chunkBufferLength;
-  // the snappy compressed chunk data
   const chunkBuffer = data.subarray(chunkBufferStart, chunkBufferEnd);
   // uncompress the chunk data
   const chunk = snappy.uncompress(chunkBuffer);
