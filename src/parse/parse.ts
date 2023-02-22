@@ -10,7 +10,7 @@ import { parseIwa } from './parse-iwa';
  */
 export const parse = async (
   inputPath: string,
-  outputPath = `${inputPath}.unzipped`,
+  outputPath = `${inputPath}.parsed`,
 ): Promise<void> => {
   // avoid output path conflict
   if (await fs.pathExists(outputPath)) {
