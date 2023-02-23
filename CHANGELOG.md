@@ -1,3 +1,5 @@
+# [0.4.0](https://github.com/meteorlxy/keynote-parser/compare/v0.3.0...v0.4.0) (2023-02-23)
+
 # [0.3.0](https://github.com/meteorlxy/keynote-parser/compare/v0.2.0...v0.3.0) (2023-02-22)
 
 ### Features
