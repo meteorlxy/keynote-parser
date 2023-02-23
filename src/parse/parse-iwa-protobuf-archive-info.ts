@@ -43,12 +43,17 @@ export const parseIwaProtobufArchiveInfo = (
     const messageBuffer = data.subarray(messageBufferStart, messageBufferEnd);
     nextCursor = messageBufferEnd;
 
-    const { messageProtoName, messageProto } = getMessageProto(messageInfo);
-    const message = messageProto.decode(messageBuffer);
-    messages.push({
-      messageProtoName,
-      message,
-    });
+    try {
+      const { messageProtoName, messageProto } = getMessageProto(messageInfo);
+      const message = messageProto.decode(messageBuffer);
+      messages.push({
+        messageProtoName,
+        message,
+      });
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(error);
+    }
   }
 
   return {
