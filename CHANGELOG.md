@@ -1,3 +1,9 @@
+## [0.4.1](https://github.com/meteorlxy/keynote-parser/compare/v0.4.0...v0.4.1) (2023-02-23)
+
+### Bug Fixes
+
+- catch errors when parsing protobuf message ([97354b5](https://github.com/meteorlxy/keynote-parser/commit/97354b52112c8af38d609970f114cde61a41f413))
+
 # [0.4.0](https://github.com/meteorlxy/keynote-parser/compare/v0.3.0...v0.4.0) (2023-02-23)
 
 # [0.3.0](https://github.com/meteorlxy/keynote-parser/compare/v0.2.0...v0.3.0) (2023-02-22)
