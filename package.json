@@ -9,9 +9,6 @@
     "iwa-parser"
   ],
   "type": "commonjs",
-  "imports": {
-    "#proto/*": "./proto/*"
-  },
   "exports": {
     ".": "./lib/index.js",
     "./package.json": "./package.json",

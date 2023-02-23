@@ -1,6 +1,6 @@
 import get from 'lodash.get';
-import messageTypeProtoNameMap from '#proto/message-type-proto-name-map';
-import proto from '#proto/proto';
+import messageTypeProtoNameMap from '../../proto/message-type-proto-name-map';
+import proto from '../../proto/proto';
 
 /**
  * Get the proto class for the given message info.

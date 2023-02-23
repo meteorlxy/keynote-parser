@@ -1,4 +1,4 @@
-import type proto from '#proto/proto';
+import type proto from '../proto/proto';
 
 export interface IwaData {
   [archiveInfoIdentifier: string]: IwaArchiveInfoData;
