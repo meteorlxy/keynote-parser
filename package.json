@@ -17,7 +17,11 @@
   },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "bin": {
+    "keynote-parser": "./bin/keynote-parser.js"
+  },
   "files": [
+    "bin",
     "lib",
     "proto"
   ],

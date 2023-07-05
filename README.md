@@ -16,7 +16,14 @@ npm i keynote-parser2
 
 ### Command Line
 
-TODO
+Parse keynote (.key) file:
+
+```sh
+# output the parsed result to `keynote_file.key.parsed` by default
+keynote-parser keynote_file.key
+# specify the output directory
+keynote-parser keynote_file.key keynote_file_parsed_directory
+```
 
 ### Node.js API
 
