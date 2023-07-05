@@ -37,6 +37,7 @@ export const parseIwaProtobufArchiveInfo = (
   let nextCursor = archiveInfoBufferEnd;
   for (const messageInfo of archiveInfo.messageInfos) {
     // TODO: handle messageInfo.type = 0
+    // @see https://github.com/psobot/keynote-parser/blob/48d4204ab943fc7ee75fd14881a54ad5264680f5/keynote_parser/codec.py#L189-L193
 
     const messageBufferStart = nextCursor;
     const messageBufferEnd = nextCursor + messageInfo.length;
@@ -46,13 +47,10 @@ export const parseIwaProtobufArchiveInfo = (
     try {
       const { messageProtoName, messageProto } = getMessageProto(messageInfo);
       const message = messageProto.decode(messageBuffer);
-      messages.push({
-        messageProtoName,
-        message,
-      });
+      messages.push({ messageProtoName, message });
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error(error);
+      if (!(error instanceof Error)) throw error;
+      console.warn('Skip message, reason:', error.message);
     }
   }
 
