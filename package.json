@@ -33,7 +33,7 @@
     "pb:js": "pbjs -t static-module -w commonjs -o proto/proto.js proto-files/*.proto",
     "pb:ts": "pbts -o proto/proto.d.ts proto/proto.js",
     "prepare": "husky install",
-    "prepublishOnly": "pnpm clean && pnpm lint && pnpm build && pnpm test",
+    "prepublishOnly": "pnpm clean && pnpm build && pnpm lint && pnpm test",
     "publish": "git push origin main --tags",
     "test": "vitest run",
     "test:cov": "vitest run --coverage",
