@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build
+        run: pnpm run build
+
       - name: Lint
         run: pnpm run lint
 
@@ -39,6 +42,3 @@ jobs:
         env:
           NODE_OPTIONS: '--max_old_space_size=4096'
         run: pnpm run test
-
-      - name: Build
-        run: pnpm run build
