@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/meteorlxy/keynote-parser/compare/v0.4.1...v0.5.0) (2023-07-05)
+
+### Features
+
+- support command line interface ([c8765c6](https://github.com/meteorlxy/keynote-parser/commit/c8765c6d40776b6ec18338c4e7ca823e816cee2d))
+- warn on unknown message type error ([f121290](https://github.com/meteorlxy/keynote-parser/commit/f121290737b74d2eada490031590378dee2a6217))
+
 ## [0.4.1](https://github.com/meteorlxy/keynote-parser/compare/v0.4.0...v0.4.1) (2023-02-23)
 
 ### Bug Fixes
