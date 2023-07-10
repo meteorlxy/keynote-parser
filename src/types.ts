@@ -10,6 +10,6 @@ export interface IwaArchiveInfoData {
 }
 
 export interface IwaMessageInfoData<T = unknown> {
-  messageProtoName: string;
   message: T;
+  messageProtoName: string;
 }

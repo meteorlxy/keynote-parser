@@ -8,8 +8,8 @@ import proto from '../../proto/proto';
 export const getMessageProto = (
   messageInfo: proto.TSP.IMessageInfo,
 ): {
-  messageProtoName: string;
   messageProto: protobuf.Type;
+  messageProtoName: string;
 } => {
   const messageProtoName = messageTypeProtoNameMap[messageInfo.type];
   const messageProto = get(proto, messageProtoName) as protobuf.Type;
@@ -17,7 +17,7 @@ export const getMessageProto = (
     throw new Error(`Unknown message type: ${JSON.stringify(messageInfo)}`);
   }
   return {
-    messageProtoName,
     messageProto,
+    messageProtoName,
   };
 };
