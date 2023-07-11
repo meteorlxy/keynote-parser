@@ -1,8 +1,6 @@
 import type proto from '../proto/proto';
 
-export interface IwaData {
-  [archiveInfoIdentifier: string]: IwaArchiveInfoData;
-}
+export type IwaData = Record<string, IwaArchiveInfoData>;
 
 export interface IwaArchiveInfoData {
   archiveInfo: proto.TSP.ArchiveInfo;
