@@ -63,7 +63,7 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@meteorlxy/eslint-config-prettier": "^2.25.0",
-    "@meteorlxy/eslint-config-prettier-typescript": "^2.26.0",
+    "@meteorlxy/eslint-config-prettier-typescript": "^2.27.0",
     "@meteorlxy/prettier-config": "^2.11.0",
     "@meteorlxy/tsconfig": "^2.23.1",
     "@types/decompress": "^4.2.4",
