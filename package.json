@@ -60,21 +60,21 @@
     "varint": "^6.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.6",
-    "@meteorlxy/eslint-config-prettier": "^2.25.0",
-    "@meteorlxy/eslint-config-prettier-typescript": "^2.27.1",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@meteorlxy/eslint-config-prettier": "^2.27.2",
+    "@meteorlxy/eslint-config-prettier-typescript": "^2.27.2",
     "@meteorlxy/prettier-config": "^2.11.0",
     "@meteorlxy/tsconfig": "^2.23.1",
     "@types/decompress": "^4.2.4",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash.get": "^4.4.7",
-    "@types/node": "^20.4.2",
+    "@types/node": "^20.4.5",
     "@types/varint": "^6.0.1",
     "@vitest/coverage-istanbul": "^0.33.0",
     "conventional-changelog-cli": "^3.0.0",
-    "eslint": "^8.44.0",
-    "fast-glob": "^3.3.0",
+    "eslint": "^8.46.0",
+    "fast-glob": "^3.3.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "long": "^5.2.3",
@@ -83,10 +83,10 @@
     "rimraf": "^5.0.1",
     "sort-package-json": "^2.5.1",
     "typescript": "^5.1.6",
-    "vite": "^4.4.3",
+    "vite": "^4.4.7",
     "vitest": "^0.33.0"
   },
-  "packageManager": "pnpm@8.6.7",
+  "packageManager": "pnpm@8.6.10",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
