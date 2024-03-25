@@ -19,6 +19,7 @@ export const parseIwaProtobufArchiveInfo = (
   const archiveInfoBufferLength = varint.decode(data, cursor);
 
   // get the archive info buffer
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const archiveInfoBufferStart = cursor + varint.decode.bytes!;
   const archiveInfoBufferEnd = archiveInfoBufferStart + archiveInfoBufferLength;
   const archiveInfoBuffer = data.subarray(

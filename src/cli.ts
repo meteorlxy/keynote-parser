@@ -13,7 +13,7 @@ export const cli = (): void => {
   const outputPath = path.resolve(cwd, output);
 
   // parse
-  parse(inputPath, outputPath).catch((error) => {
+  parse(inputPath, outputPath).catch((error: unknown) => {
     console.error(error);
     process.exit(1);
   });

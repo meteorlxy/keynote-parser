@@ -8,8 +8,9 @@ const testCases: [string, boolean][] = [
 ];
 
 describe('isIwaFile', () => {
-  testCases.forEach(([relativeFilePath, expected]) =>
-    it(`${relativeFilePath} -> ${expected}`, () =>
-      expect(isIwaFile(relativeFilePath)).toBe(expected)),
-  );
+  testCases.forEach(([relativeFilePath, expected]) => {
+    it(`${relativeFilePath} -> ${expected}`, () => {
+      expect(isIwaFile(relativeFilePath)).toBe(expected);
+    });
+  });
 });

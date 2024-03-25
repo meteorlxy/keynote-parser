@@ -12,7 +12,9 @@ export const getMessageProto = (
   messageProtoName: string;
 } => {
   const messageProtoName = messageTypeProtoNameMap[messageInfo.type];
-  const messageProto = get(proto, messageProtoName) as protobuf.Type;
+  const messageProto = get(proto, messageProtoName) as
+    | protobuf.Type
+    | undefined;
   if (!messageProto) {
     throw new Error(`Unknown message type: ${JSON.stringify(messageInfo)}`);
   }
