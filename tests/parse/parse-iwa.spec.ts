@@ -4,12 +4,12 @@ import fs from 'fs-extra';
 import { describe, expect, it } from 'vitest';
 import { parseIwa } from '../../src';
 
-const IWA_DIR = path.resolve(__dirname, '../__fixtures__/iwa');
+const iwaDirectory = path.resolve(__dirname, '../__fixtures__/iwa');
 
 describe('parseIwa', () => {
   it('should work well', async () => {
     const iwaFilePaths = await fastGlob('**/*.iwa', {
-      cwd: IWA_DIR,
+      cwd: iwaDirectory,
       absolute: true,
     });
 
