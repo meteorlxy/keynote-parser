@@ -1,3 +1,15 @@
+# [0.6.0](https://github.com/meteorlxy/keynote-parser/compare/v0.5.0...v0.6.0) (2025-05-08)
+
+### Build System
+
+- drop node 18 ([609459c](https://github.com/meteorlxy/keynote-parser/commit/609459c4a9705e1eea6c6e009f730178da15af90))
+- drop support for node 16 ([0f188da](https://github.com/meteorlxy/keynote-parser/commit/0f188daceeb5a5b05c4cd7f2ee93d3b82e3b8ec3))
+
+### BREAKING CHANGES
+
+- drop node 18
+- drop support for node 16
+
 # [0.5.0](https://github.com/meteorlxy/keynote-parser/compare/v0.4.1...v0.5.0) (2023-07-05)
 
 ### Features
