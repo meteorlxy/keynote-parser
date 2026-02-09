@@ -1,3 +1,9 @@
+# [0.7.0](https://github.com/meteorlxy/keynote-parser/compare/v0.6.0...v0.7.0) (2026-02-09)
+
+### Features
+
+- upgrade protobufjs to v8.0.0 ([52ce18e](https://github.com/meteorlxy/keynote-parser/commit/52ce18e0132f26fee597420e2025d8c8b5e83519))
+
 # [0.6.0](https://github.com/meteorlxy/keynote-parser/compare/v0.5.0...v0.6.0) (2025-05-08)
 
 ### Build System
