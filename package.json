@@ -8,6 +8,14 @@
     "iwa",
     "iwa-parser"
   ],
+  "homepage": "https://github.com/meteorlxy/keynote-parser#readme",
+  "bugs": {
+    "url": "git+https://github.com/meteorlxy/keynote-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meteorlxy/keynote-parser.git"
+  },
   "type": "commonjs",
   "exports": {
     ".": "./lib/index.js",
