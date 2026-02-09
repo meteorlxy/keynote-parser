@@ -1,6 +1,6 @@
-const { meteorlxy } = require('@meteorlxy/eslint-config');
+import { meteorlxy } from '@meteorlxy/eslint-config';
 
-module.exports = meteorlxy({
+export default meteorlxy({
   ignores: {
     files: ['proto/'],
   },
