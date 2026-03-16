@@ -1,7 +1,9 @@
 import path from 'node:path';
+
 import fastGlob from 'fast-glob';
 import fs from 'fs-extra';
 import { describe, expect, it } from 'vitest';
+
 import { parseIwa } from '../../src';
 
 const iwaDirectory = path.resolve(__dirname, '../__fixtures__/iwa');

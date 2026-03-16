@@ -1,7 +1,9 @@
 import path from 'node:path';
+
 import fastGlob from 'fast-glob';
 import fs from 'fs-extra';
 import { describe, expect, it } from 'vitest';
+
 import { parse } from '../../src';
 
 const keynoteFile = path.resolve(__dirname, '../__fixtures__/empty.key');

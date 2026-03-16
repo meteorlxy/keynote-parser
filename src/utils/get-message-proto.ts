@@ -1,4 +1,5 @@
 import get from 'lodash.get';
+
 import messageTypeProtoNameMap from '../../proto/message-type-proto-name-map';
 import proto from '../../proto/proto';
 
