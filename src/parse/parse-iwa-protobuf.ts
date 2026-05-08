@@ -1,4 +1,5 @@
 import type { IwaData } from '../types';
+
 import { parseIwaProtobufArchiveInfo } from './parse-iwa-protobuf-archive-info';
 
 /**

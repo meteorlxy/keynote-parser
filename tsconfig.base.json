@@ -3,9 +3,8 @@
   "compilerOptions": {
     "lib": ["ES2023"],
     "module": "CommonJS",
-    "moduleResolution": "Node10",
+    "moduleResolution": "bundler",
     "target": "ES2023",
-    "baseUrl": ".",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "verbatimModuleSyntax": false // enable it when migrating to esm

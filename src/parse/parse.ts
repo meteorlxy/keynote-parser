@@ -2,6 +2,7 @@ import decompress from 'decompress';
 import fs from 'fs-extra';
 
 import { isIwaFile } from '../utils';
+
 import { parseIwa } from './parse-iwa';
 
 /**

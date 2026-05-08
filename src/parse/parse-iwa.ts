@@ -1,4 +1,5 @@
 import type { IwaData } from '../types';
+
 import { parseIwaProtobuf } from './parse-iwa-protobuf';
 import { parseIwaSnappy } from './parse-iwa-snappy';
 
