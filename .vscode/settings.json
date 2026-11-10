@@ -8,15 +8,8 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
-    "files.trimTrailingWhitespace": false
+    "files.trimTrailingWhitespace": false,
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "markdown",
-    "typescript",
-    "typescriptreact"
-  ],
   "oxc.fmt.configPath": "oxfmt.config.mts",
-  "cSpell.words": ["snappyjs", "varint"]
+  "cSpell.words": ["snappyjs", "varint"],
 }
