@@ -96,5 +96,14 @@
       "@commitlint/config-conventional"
     ]
   },
-  "packageManager": "pnpm@11.0.8"
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "26.13.0"
+    }
+  }
 }
