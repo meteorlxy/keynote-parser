@@ -1,6 +1,5 @@
 allowBuilds:
   protobufjs: true
-  unrs-resolver: true
 
 minimumReleaseAgeExclude:
   - '@meteorlxy/oxfmt-config'
